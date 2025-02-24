@@ -4,8 +4,8 @@
 # from sklearn.linear_model import LinearRegression
 # import mslearn as tg
 # from mslearn import LinearRegression
-# from mslearn import KNeighborsRegressor
-from sklearn.neighbors import KNeighborsRegressor
+from mslearn import KNeighborsRegressor
+# from sklearn.neighbors import KNeighborsRegressor
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -18,7 +18,7 @@ plt.axis([23500, 62500, 4, 9])
 plt.show()
 
 #model = LinearRegression()
-model = KNeighborsRegressor()
+model = KNeighborsRegressor(3)
 model.fit(X, y)
 
 X_new = [[31721.3]]  # ROK 2020
